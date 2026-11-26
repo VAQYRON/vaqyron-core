@@ -1,0 +1,14 @@
+# INERT EXAMPLE ONLY. Do not copy unchanged: replace the reserved TEST-NET-2
+# peer address below with Node A's actual reachable public IPv4/IPv6 address.
+# Supply a separate -datadir and this file via -conf for each node.
+chain=vaqyron-testnet
+listen=1
+port=39733
+dnsseed=0
+fixedseeds=0
+addnode=198.51.100.10:39733
+
+# If RPC is enabled for local diagnostics, keep it loopback-only.
+server=1
+rpcbind=127.0.0.1
+rpcallowip=127.0.0.1

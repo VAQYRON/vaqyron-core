@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "role": "main_receiver",
+  "enabled": false,
+  "automatic_start": false,
+  "bind": {
+    "interface_guid": "<APPROVED_MAIN_INTERFACE_GUID>",
+    "address": "<APPROVED_MAIN_PRIVATE_IP>",
+    "port": 0
+  },
+  "tls": {
+    "server_identity": "<MAIN_SERVER_DNS_NAME_OR_IP>",
+    "certificate_file": "<MAIN_SERVER_CERTIFICATE_PATH>",
+    "private_key_file": "<MAIN_SERVER_PRIVATE_KEY_PATH>",
+    "client_ca_file": "<APPROVED_CLIENT_CA_BUNDLE_PATH>"
+  },
+  "identity_registry_file": "<MAIN_IDENTITY_REGISTRY_PATH>",
+  "receipt_signing_key_file": "<MAIN_RECEIPT_SIGNING_KEY_PATH>",
+  "source_allowlist": []
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "role": "dell_agent",
+  "enabled": false,
+  "automatic_start": false,
+  "machine_id": "<DELL_ENROLLED_MACHINE_ID>",
+  "collection": {
+    "log_file": "<OPERATOR_APPROVED_EXISTING_LOG_PATH>",
+    "checkpoint_file": null
+  },
+  "spool_file": "<DELL_LOCAL_SPOOL_PATH>",
+  "receiver": {
+    "host": "<APPROVED_MAIN_SERVER_DNS_NAME_OR_IP>",
+    "port": 0
+  },
+  "tls": {
+    "server_ca_file": "<APPROVED_MAIN_SERVER_CA_BUNDLE_PATH>",
+    "client_certificate_file": "<DELL_CLIENT_CERTIFICATE_PATH>",
+    "client_private_key_file": "<DELL_CLIENT_PRIVATE_KEY_PATH>",
+    "receipt_trust_bundle_file": "<APPROVED_RECEIPT_PUBLIC_KEY_BUNDLE_PATH>"
+  }
+}
